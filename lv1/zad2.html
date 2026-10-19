@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prijava na radionicu programiranja</title>
+</head>
+<body>
+
+    <h1>Prijava na radionicu programiranja</h1>
+
+    <p>Popunite formu za prijavu na radionicu.</p>
+
+    <form>
+        <!-- 1. Unos teksta -->
+        <label for="ime">Ime i prezime:</label>
+        <input type="text" id="ime" name="ime" required>
+        <br><br>
+
+        <!-- 2. Izbor samo jedne opcije putem select elementa -->
+        <label for="nivo">Nivo znanja programiranja:</label>
+        <select id="nivo" name="nivo">
+            <option value="pocetnik">Početnik</option>
+            <option value="srednji">Srednji nivo</option>
+            <option value="napredni">Napredni nivo</option>
+        </select>
+        <br><br>
+
+        <!-- 3. Izbor samo jedne opcije putem radio buttons -->
+        <p>Način pohađanja radionice:</p>
+
+        <input type="radio" id="uzivo" name="nacin" value="uzivo">
+        <label for="uzivo">Uživo</label>
+
+        <input type="radio" id="online" name="nacin" value="online">
+        <label for="online">Online</label>
+        <br><br>
+
+        <!-- 4. Izbor više opcija putem checkbox elemenata -->
+        <p>Koje oblasti vas zanimaju?</p>
+
+        <input type="checkbox" id="html" name="oblasti" value="html">
+        <label for="html">HTML i CSS</label>
+        <br>
+
+        <input type="checkbox" id="javascript" name="oblasti" value="javascript">
+        <label for="javascript">JavaScript</label>
+        <br>
+
+        <input type="checkbox" id="python" name="oblasti" value="python">
+        <label for="python">Python</label>
+        <br><br>
+
+        <!-- 5. Dodatni unos teksta -->
+        <label for="napomena">Dodatna napomena:</label>
+        <br>
+        <textarea id="napomena" name="napomena" rows="4" cols="40"></textarea>
+        <br><br>
+
+        <button type="button">Prijavi se</button>
+    </form>
+
+    <hr>
+
+    <h2>Objašnjenje odabranih elemenata</h2>
+
+    <ol>
+        <li>
+            <strong>Ime i prezime – input type="text":</strong>
+            Koristi se za unos tekstualnih podataka korisnika.
+        </li>
+        <li>
+            <strong>Nivo znanja – select:</strong>
+            Omogućava izbor samo jednog nivoa znanja.
+            Select je prikladan jer opcije zauzimaju malo prostora,
+            a korisnik bira jednu od ponuđenih mogućnosti.
+        </li>
+        <li>
+            <strong>Način pohađanja – radio buttons:</strong>
+            Korisnik može izabrati samo jednu opciju.
+            Radio buttons su prikladni jer su obje mogućnosti
+            odmah vidljive korisniku.
+        </li>
+        <li>
+            <strong>Oblasti interesa – checkbox:</strong>
+            Omogućava izbor više oblasti istovremeno jer korisnika
+            može zanimati više programskih tehnologija.
+        </li>
+        <li>
+            <strong>Dodatna napomena – textarea:</strong>
+            Omogućava unos dužeg teksta, pitanja ili posebnih zahtjeva.
+        </li>
+    </ol>
+
+    <h2>Poređenje radio buttons i select elemenata</h2>
+
+    <p>
+        Za nivo znanja mogli smo koristiti i radio buttons i select.
+        Radio buttons prikazuju sve opcije odjednom, dok select zauzima
+        manje prostora. U ovoj formi odabran je select jer nivo znanja
+        predstavlja jednu od nekoliko ponuđenih kategorija.
+        Za način pohađanja odabrani su radio buttons jer postoje samo
+        dvije opcije koje je korisno odmah prikazati.
+    </p>
+
+    <h2>Primjeri unesenih podataka</h2>
+
+    <p><strong>Primjer 1 – izbor jedne opcije:</strong></p>
+    <ul>
+        <li>Ime i prezime: Amir Hadžić</li>
+        <li>Nivo znanja: Početnik</li>
+        <li>Način pohađanja: Online</li>
+    </ul>
+
+    <p><strong>Primjer 2 – izbor više opcija:</strong></p>
+    <ul>
+        <li>Ime i prezime: Lejla Kovačević</li>
+        <li>Nivo znanja: Srednji nivo</li>
+        <li>Način pohađanja: Uživo</li>
+        <li>Oblasti interesa: HTML i CSS, JavaScript i Python</li>
+    </ul>
+
+</body>
+</html>
