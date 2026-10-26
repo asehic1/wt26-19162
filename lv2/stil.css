@@ -1,0 +1,62 @@
+
+/* Osnovni izgled stranice */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Okvir cijele stranice */
+#okvir {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* Zaglavlje - žuto */
+#zaglavlje {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Meni - žuto */
+#meni {
+    background-color: yellow;
+    padding: 10px;
+}
+
+#meni ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#meni li {
+    display: inline;
+    margin-right: 25px;
+}
+
+/* Glavni dio - zeleno */
+#glavni {
+    background-color: lightgreen;
+    width: 600px;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Desni dio - ljubičasto */
+#desno {
+    background-color: violet;
+    width: 300px;
+    float: right;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Podnožje - žuto */
+#podnozje {
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+    clear: both;
+}
