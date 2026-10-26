@@ -3,143 +3,78 @@
 <html lang="bs">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dani programiranja i tehnologije</title>
+    <title>Radionica grafičkog dizajna</title>
 </head>
 <body>
 
-    <header>
-        <h1>Dani programiranja i tehnologije 2026</h1>
+    <h1>Radionica grafičkog dizajna za studente</h1>
+
+    <p>
+        Radionica je namijenjena studentima koji žele naučiti osnove
+        grafičkog dizajna i upoznati se s alatima za izradu vizuelnih
+        sadržaja. Predznanje nije potrebno.
+    </p>
+
+    <img
+        src="https://images.unsplash.com/photo- design"
+        alt="Radni sto sa materijalima za grafički dizajn"
+        width="500"
+    >
+
+    <h2>Informacije o događaju</h2>
+
+    <p>
+        Radionica će se održati 15. novembra 2026. godine,
+        od 10:00 do 14:00 sati, u prostorijama studentskog
+        centra u Sarajevu.
+    </p>
+
+    <ul>
+        <li>Uvod u grafički dizajn</li>
+        <li>Osnove rada u Adobe Illustratoru</li>
+        <li>Izrada jednostavnog postera</li>
+        <li>Praktični savjeti za izradu portfolija</li>
+    </ul>
+
+    <h2>Kako se prijaviti?</h2>
+
+    <p>
+        Za učešće je potrebno popuniti obrazac ispod i poslati
+        svoje podatke organizatoru na adresu
+        <a href="mailto:radionica@example.com">radionica@example.com</a>.
+        Slanje ove HTML forme nije implementirano.
+    </p>
+
+    <form>
         <p>
-            Edukativni događaj namijenjen srednjoškolcima i studentima
-            koji žele upoznati svijet programiranja i novih tehnologija.
+            <label for="ime">Ime i prezime:</label>
+            <input type="text" id="ime" name="ime">
         </p>
-    </header>
 
-    <main>
-        <section>
-            <h2>O događaju</h2>
+        <p>Da li ste student?</p>
 
-            <p>
-                Dani programiranja i tehnologije okupljaju mlade ljude
-                zainteresovane za informatiku, razvoj softvera i
-                savremene tehnološke inovacije.
-            </p>
+        <input type="radio" id="student_da" name="student" value="da">
+        <label for="student_da">Da</label>
 
-            <p>
-                Posjetioci će moći prisustvovati predavanjima,
-                upoznati se s osnovama web razvoja i razgovarati
-                s iskusnim programerima.
-            </p>
+        <input type="radio" id="student_ne" name="student" value="ne">
+        <label for="student_ne">Ne</label>
 
-            <img
-                src="https://placehold.co/800x400/1e3a5f/ffffff?text=Programiranje+i+tehnologija"
-                alt="Ilustracija računara i programiranja na tehnološkom događaju"
-                width="600"
-            >
+        <p>
+            <input type="checkbox" id="oprema" name="oprema">
+            <label for="oprema">Potrebno mi je da organizator obezbijedi računar.</label>
+        </p>
 
-            <h3>Šta vas očekuje?</h3>
-            <ul>
-                <li>Predavanja o programiranju</li>
-                <li>Praktične radionice web razvoja</li>
-                <li>Upoznavanje s drugim studentima</li>
-                <li>Razgovori sa stručnjacima iz IT industrije</li>
-            </ul>
-        </section>
+        <p>
+            <label for="iskustvo">Nivo iskustva:</label>
+            <select id="iskustvo" name="iskustvo">
+                <option value="pocetnik">Početnik</option>
+                <option value="osnovno">Osnovno znanje</option>
+                <option value="napredno">Napredno znanje</option>
+            </select>
+        </p>
 
-        <section>
-            <h2>Vrijeme, mjesto i prijava</h2>
-
-            <p><strong>Datum:</strong> 15. novembar 2026.</p>
-            <p><strong>Vrijeme:</strong> 10:00 – 16:00 sati</p>
-            <p><strong>Mjesto:</strong> Elektrotehnički fakultet u Sarajevu</p>
-            <p><strong>Ulaz:</strong> Besplatan za sve učesnike</p>
-
-            <p>
-                Više informacija o fakultetu možete pronaći na
-                <a href="https://etf.unsa.ba/" target="_blank">
-                    službenoj stranici Elektrotehničkog fakulteta
-                </a>.
-            </p>
-
-            <h3>Kako se prijaviti?</h3>
-
-            <p>
-                Za učešće je potrebno poslati ime, odabrati kategoriju
-                učesnika i radionicu te označiti saglasnost za obradu
-                podataka. Podatke za prijavu pošaljite organizatorima
-                na adresu: prijave@example.com.
-            </p>
-
-            <form>
-                <label for="ime">Ime i prezime:</label>
-                <input
-                    type="text"
-                    id="ime"
-                    name="ime"
-                    placeholder="Unesite ime i prezime"
-                >
-
-                <p>Odaberite kategoriju učesnika:</p>
-
-                <input
-                    type="radio"
-                    id="srednjoskolac"
-                    name="kategorija"
-                    value="srednjoskolac"
-                >
-                <label for="srednjoskolac">Srednjoškolac</label>
-
-                <input
-                    type="radio"
-                    id="student"
-                    name="kategorija"
-                    value="student"
-                >
-                <label for="student">Student</label>
-
-                <input
-                    type="radio"
-                    id="ostalo"
-                    name="kategorija"
-                    value="ostalo"
-                >
-                <label for="ostalo">Ostalo</label>
-
-                <p>
-                    <input
-                        type="checkbox"
-                        id="saglasnost"
-                        name="saglasnost"
-                    >
-                    <label for="saglasnost">
-                        Saglasan/saglasna sam s korištenjem podataka
-                        za potrebe organizacije događaja.
-                    </label>
-                </p>
-
-                <label for="radionica">Odaberite radionicu:</label>
-                <select id="radionica" name="radionica">
-                    <option value="">-- Izaberite radionicu --</option>
-                    <option value="html-css">HTML i CSS</option>
-                    <option value="python">Uvod u Python</option>
-                    <option value="vjestacka-inteligencija">
-                        Vještačka inteligencija
-                    </option>
-                </select>
-
-                <p>
-                    <button type="button">
-                        Prijava nije aktivna – kontaktirajte organizatore
-                    </button>
-                </p>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026. Dani programiranja i tehnologije.</p>
-    </footer>
+        <button type="button">Prijava nije aktivna</button>
+    </form>
 
 </body>
 </html>
