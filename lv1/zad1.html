@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <title>Radionica grafičkog dizajna</title>
+</head>
+<body>
+
+    <h1>Radionica grafičkog dizajna za studente</h1>
+
+    <p>
+        Radionica je namijenjena studentima koji žele naučiti osnove
+        grafičkog dizajna i upoznati se s alatima za izradu vizuelnih
+        sadržaja. Predznanje nije potrebno.
+    </p>
+
+    <img
+        src="https://images.unsplash.com/photo- design"
+        alt="Radni sto sa materijalima za grafički dizajn"
+        width="500"
+    >
+
+    <h2>Informacije o događaju</h2>
+
+    <p>
+        Radionica će se održati 15. novembra 2026. godine,
+        od 10:00 do 14:00 sati, u prostorijama studentskog
+        centra u Sarajevu.
+    </p>
+
+    <ul>
+        <li>Uvod u grafički dizajn</li>
+        <li>Osnove rada u Adobe Illustratoru</li>
+        <li>Izrada jednostavnog postera</li>
+        <li>Praktični savjeti za izradu portfolija</li>
+    </ul>
+
+    <h2>Kako se prijaviti?</h2>
+
+    <p>
+        Za učešće je potrebno popuniti obrazac ispod i poslati
+        svoje podatke organizatoru na adresu
+        <a href="mailto:radionica@example.com">radionica@example.com</a>.
+        Slanje ove HTML forme nije implementirano.
+    </p>
+
+    <form>
+        <p>
+            <label for="ime">Ime i prezime:</label>
+            <input type="text" id="ime" name="ime">
+        </p>
+
+        <p>Da li ste student?</p>
+
+        <input type="radio" id="student_da" name="student" value="da">
+        <label for="student_da">Da</label>
+
+        <input type="radio" id="student_ne" name="student" value="ne">
+        <label for="student_ne">Ne</label>
+
+        <p>
+            <input type="checkbox" id="oprema" name="oprema">
+            <label for="oprema">Potrebno mi je da organizator obezbijedi računar.</label>
+        </p>
+
+        <p>
+            <label for="iskustvo">Nivo iskustva:</label>
+            <select id="iskustvo" name="iskustvo">
+                <option value="pocetnik">Početnik</option>
+                <option value="osnovno">Osnovno znanje</option>
+                <option value="napredno">Napredno znanje</option>
+            </select>
+        </p>
+
+        <button type="button">Prijava nije aktivna</button>
+    </form>
+
+</body>
+</html>

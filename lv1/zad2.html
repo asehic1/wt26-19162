@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <title>Narudžba majice</title>
+</head>
+<body>
+
+    <h1>Forma za naručivanje majice</h1>
+
+    <p>
+        Pomoću ove forme kupac može odabrati veličinu,
+        dodatke i način dostave majice.
+    </p>
+
+    <form>
+        <h2>Podaci o kupcu</h2>
+
+        <p>
+            <label for="ime">Ime i prezime:</label>
+            <input type="text" id="ime" name="ime">
+        </p>
+
+        <p>
+            <label for="email">Email adresa:</label>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <h2>Odabir veličine</h2>
+
+        <p>Odaberite jednu veličinu:</p>
+
+        <input type="radio" id="s" name="velicina" value="S">
+        <label for="s">S</label>
+
+        <input type="radio" id="m" name="velicina" value="M">
+        <label for="m">M</label>
+
+        <input type="radio" id="l" name="velicina" value="L">
+        <label for="l">L</label>
+
+        <input type="radio" id="xl" name="velicina" value="XL">
+        <label for="xl">XL</label>
+
+        <h2>Dodatne opcije</h2>
+
+        <p>Možete odabrati više opcija:</p>
+
+        <input type="checkbox" id="poklon" name="dodaci" value="pakovanje">
+        <label for="poklon">Poklon-pakovanje</label>
+
+        <br>
+
+        <input type="checkbox" id="print" name="dodaci" value="print">
+        <label for="print">Dodatna štampa na majici</label>
+
+        <br>
+
+        <input type="checkbox" id="brza" name="dodaci" value="brza">
+        <label for="brza">Prioritetna obrada narudžbe</label>
+
+        <h2>Način dostave</h2>
+
+        <label for="dostava">Odaberite način dostave:</label>
+
+        <select id="dostava" name="dostava">
+            <option value="posta">Pošta</option>
+            <option value="licno">Lično preuzimanje</option>
+            <option value="kurir">Kurirska služba</option>
+        </select>
+
+        <p>
+            <button type="button">Slanje narudžbe nije aktivno</button>
+        </p>
+    </form>
+
+    <h2>Obrazloženje izbora elemenata</h2>
+
+    <p>
+        Za veličinu majice koristim radio buttons jer kupac može
+        odabrati samo jednu veličinu. Za dodatne opcije koristim
+        checkbox elemente jer kupac može izabrati više dodataka
+        istovremeno.
+    </p>
+
+    <p>
+        Za veličinu se mogao koristiti i select element. Radio
+        buttons su prikladniji jer postoji mali broj veličina i
+        sve opcije su odmah vidljive bez otvaranja padajuće liste.
+    </p>
+
+    <h2>Primjeri unosa</h2>
+
+    <p>
+        Primjer 1: Kupac odabire veličinu M. To je izbor jedne opcije.
+    </p>
+
+    <p>
+        Primjer 2: Kupac bira poklon-pakovanje i dodatnu štampu.
+        To je izbor više opcija istovremeno.
+    </p>
+
+</body>
+</html>
