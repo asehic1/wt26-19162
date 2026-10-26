@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorijal 2, Zadatak 4</title>
+    <link rel="stylesheet" href="zad4.css">
+</head>
+<body>
+
+    <div id="okvir">
+        <h3>Unos privatnih podataka</h3>
+
+        <div id="napredak">
+            <progress value="2" max="5"></progress>
+            <span>Korak 2 od 5</span>
+        </div>
+
+        <form>
+            <p>
+                <label for="datum">Datum rođenja:</label>
+                <input type="date" id="datum" name="datum">
+            </p>
+
+            <p>
+                <label for="email">Email adresa:</label>
+                <input type="email" id="email" name="email">
+            </p>
+
+            <div id="dugmad">
+                <button type="button" onclick="history.back()">
+                    &lt;&lt; Nazad
+                </button>
+
+                <button type="button" onclick="alert('Sljedeći korak')">
+                    Dalje &gt;&gt;
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

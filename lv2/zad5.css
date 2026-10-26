@@ -1,0 +1,57 @@
+
+body {
+    font-family: "Times New Roman", serif;
+    background-color: white;
+}
+
+#okvir {
+    width: 550px;
+    min-height: 230px;
+    margin: 20px auto;
+    border-left: 3px solid #4169a1;
+    border-right: 3px solid #4169a1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+#napredak {
+    margin-bottom: 15px;
+}
+
+progress {
+    width: 125px;
+    height: 13px;
+    vertical-align: middle;
+}
+
+#napredak span {
+    margin-left: 5px;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+label {
+    display: inline-block;
+    width: 110px;
+}
+
+input {
+    width: 125px;
+    box-sizing: border-box;
+}
+
+#dugmad {
+    margin-top: 15px;
+}
+
+button {
+    margin-right: 3px;
+    font-family: "Times New Roman", serif;
+}
