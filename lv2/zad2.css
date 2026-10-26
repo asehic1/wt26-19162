@@ -1,0 +1,48 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    color: darkblue;
+}
+
+/* Izgled liste menija */
+.meni {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Zajednički stil linkova */
+.meni a {
+    display: inline;
+    width: 200px;
+    padding: 12px;
+    margin: 5px;
+    border: 2px solid darkblue;
+    background-color: lightblue;
+    color: black;
+    text-decoration: none;
+}
+
+/* Promjena izgleda kada je miš iznad linka */
+.meni a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Izgled odjeljaka */
+#priroda, #skijanje, #planinarenje, #izlet {
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid gray;
+}
+
+/* FINALNI PRIKAZ: block */
+.meni a {
+    display: block;
+    width: 200px;
+}
