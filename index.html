@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorijska vježba 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Laboratorijska vježba 4</h1>
+        <p>JavaScript – interaktivni zadaci</p>
+    </header>
+
+    <main>
+
+        <!-- ZADATAK 1: CHECKLISTA -->
+        <section class="card">
+            <h2>1. Lista zadataka</h2>
+            <p>Označi zadatke koje si završio.</p>
+
+            <ul id="taskList">
+                <li><label><input type="checkbox"> Učiti JavaScript</label></li>
+                <li><label><input type="checkbox"> Uraditi HTML</label></li>
+                <li><label><input type="checkbox"> Urediti CSS</label></li>
+                <li><label><input type="checkbox"> Testirati aplikaciju</label></li>
+                <li><label><input type="checkbox"> Poslati zadatak</label></li>
+            </ul>
+
+            <p id="taskSummary">Završeno: 0 od 5 zadataka</p>
+            <button id="resetTasks">Poništi označeno</button>
+        </section>
+
+        <!-- ZADATAK 2: OBAVIJEST -->
+        <section class="card">
+            <h2>2. Kreiranje obavijesti</h2>
+
+            <form id="announcementForm">
+                <label for="announcementTitle">Naslov:</label>
+                <input type="text" id="announcementTitle"
+                       placeholder="Unesi naslov">
+
+                <label for="announcementText">Tekst obavijesti:</label>
+                <textarea id="announcementText"
+                          placeholder="Unesi tekst obavijesti"></textarea>
+
+                <label for="announcementCategory">Kategorija:</label>
+                <select id="announcementCategory">
+                    <option value="info">Informacija</option>
+                    <option value="warning">Upozorenje</option>
+                    <option value="success">Obavijest</option>
+                </select>
+
+                <button type="submit">Prikaži obavijest</button>
+            </form>
+
+            <div id="announcementPreview" class="preview">
+                <h3>Pregled obavijesti</h3>
+                <p>Ovdje će se prikazati tvoja obavijest.</p>
+            </div>
+        </section>
+
+        <!-- ZADATAK 3: TROŠKOVI -->
+        <section class="card">
+            <h2>3. Evidencija troškova</h2>
+
+            <form id="expenseForm">
+                <label for="expenseName">Naziv troška:</label>
+                <input type="text" id="expenseName"
+                       placeholder="Npr. Hrana">
+
+                <label for="expenseAmount">Iznos (KM):</label>
+                <input type="number" id="expenseAmount"
+                       placeholder="Npr. 25">
+
+                <button type="submit">Dodaj trošak</button>
+            </form>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Naziv troška</th>
+                            <th>Iznos (KM)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="expenseTable">
+                        <tr>
+                            <td>Hrana</td>
+                            <td>25.00</td>
+                        </tr>
+                        <tr>
+                            <td>Prevoz</td>
+                            <td>10.00</td>
+                        </tr>
+                        <tr>
+                            <td>Knjige</td>
+                            <td>30.00</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th>Ukupno:</th>
+                            <th id="totalAmount">65.00 KM</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <p id="expenseCount">Broj troškova: 3</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Laboratorijska vježba 4</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
